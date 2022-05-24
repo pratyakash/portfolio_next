@@ -1,7 +1,7 @@
-import "../styles/app.scss";
+import '../styles/app.scss';
 
-function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+export default function MyApp({ Component, pageProps }) {
+	const getLayout = Component.getLayout || (page => page);
+
+	return getLayout(<Component {...pageProps} />);
 }
-
-export default MyApp;
