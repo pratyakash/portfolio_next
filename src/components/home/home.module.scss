@@ -1,0 +1,11 @@
+.home{
+    height: 100vh;
+    width: 100vw;
+    
+    &__wrapper {
+        background: linear-gradient(to top, #000000 0%, #B5B0B0 100%);
+
+        width: 100%;
+        height: 100%;
+    }
+}

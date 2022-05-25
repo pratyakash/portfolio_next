@@ -10,3 +10,16 @@
     @content;
   }
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

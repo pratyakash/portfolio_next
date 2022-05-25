@@ -1,0 +1,33 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/animation";
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #000000 0%, #B5B0B0 100%);
+
+    @include flex-center;
+
+    &__wrapper {
+
+        width: 50%;
+        height: 50%;
+
+        @include flex-center;
+    }
+
+    &__content_main {
+        font-size: 70px;
+        color: white;
+        letter-spacing: 2px;
+        text-rendering: geometricPrecision;
+    }
+
+    &__content_sub {
+        font-size: 35px;
+        color: white;
+        text-rendering: geometricPrecision;
+
+        @include flex-left;
+    }
+}

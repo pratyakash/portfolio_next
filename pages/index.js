@@ -1,3 +1,5 @@
-export default function Home() {
-	return <div>Hello</div>;
+import Home from '../src/components/home';
+
+export default function Index() {
+	return <Home />;
 }
